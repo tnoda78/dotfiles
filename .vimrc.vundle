@@ -1,0 +1,12 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/vundle.git/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'nanotech/jellybeans.vim'
+Bundle 'mattn/zencoding-vim'
+
+filetype plugin indent on
+
