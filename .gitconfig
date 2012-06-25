@@ -1,0 +1,14 @@
+[user]
+	name = tnoda78
+	email = tn78adsl@gmail.com
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  lg = log
+  ad = add
+
+
