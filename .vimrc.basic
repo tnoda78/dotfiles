@@ -31,13 +31,11 @@ imap <C-@> <C-[>
 map <C-N> :tabnew<CR>
 map <C-W> :tabclose<CR>
 map <C-Tab> :tabn<CR>
-map <C-S> :colorscheme sienna<CR>
-map <C-D> :colorscheme jellybeans<CR>
 map <esc><esc> :noh<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" zencoding-vim
+imap <C-E> <C-Y>,
+
 syntax enable
-cd ~
-
-

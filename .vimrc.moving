@@ -10,7 +10,7 @@ nnoremap l <Right>
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
-inoremap  <C-e> <END>
+"inoremap  <C-e> <END>
 inoremap  <C-a> <HOME>
 
 inoremap <C-j> <Down>
