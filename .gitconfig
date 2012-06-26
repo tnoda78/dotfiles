@@ -12,3 +12,7 @@
   ad = add
 
 
+[color]
+  diff = auto
+  tatus = auto
+  ranch = auto
