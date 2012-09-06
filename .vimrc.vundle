@@ -8,6 +8,7 @@ Bundle 'gmarik/vundle'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'scrooloose/nerdtree'
 
 filetype plugin indent on
 

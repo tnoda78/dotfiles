@@ -30,5 +30,7 @@ vnoremap > >gv
 " zencoding-vim
 imap <C-E> <C-Y>,
 
-syntax enable
+nmap <C-\> :NERDTreeToggle<CR>
+
+
 
