@@ -12,7 +12,9 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
 Bundle 'Shougo/unite.vim'
 Bundle 'vim-jp/vimdoc-ja'
-
+Bundle 'vim-scripts/surround.vim'
+Bundle 'thinca/vim-quickrun'
 
 filetype plugin indent on
+
 
