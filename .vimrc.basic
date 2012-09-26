@@ -37,4 +37,5 @@ imap <C-E> <C-Y>,
 " nerdTree ---------------------
 nmap <C-\> :NERDTreeToggle<CR>
 
-
+" ヘルプの優先順位
+set helplang=ja,en

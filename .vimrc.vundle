@@ -11,6 +11,8 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-rails'
 Bundle 'Shougo/unite.vim'
+Bundle 'vim-jp/vimdoc-ja'
+
 
 filetype plugin indent on
 
