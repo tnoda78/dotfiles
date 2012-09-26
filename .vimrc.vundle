@@ -9,6 +9,7 @@ Bundle 'nanotech/jellybeans.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'scrooloose/nerdtree'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 
