@@ -1,20 +1,22 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/vundle.git/
-call vundle#rc()
+if has('vim_starting')
+  set rtp+=~/.vim/neobundle.vim.git/
+  call neobundle#rc(expand('~/bundle'))
+endif
 
-Bundle 'gmarik/vundle'
-Bundle 'nanotech/jellybeans.vim'
-Bundle 'mattn/zencoding-vim'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'scrooloose/nerdtree'
-Bundle 'tpope/vim-rails'
-Bundle 'Shougo/unite.vim'
-Bundle 'vim-jp/vimdoc-ja'
-Bundle 'vim-scripts/surround.vim'
-Bundle 'thinca/vim-quickrun'
+NeoBundle 'nanotech/jellybeans.vim'
+NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'tpope/vim-rails'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'vim-jp/vimdoc-ja'
+NeoBundle 'vim-scripts/surround.vim'
+NeoBundle 'thinca/vim-quickrun'
 
-filetype plugin indent on
+filetype plugin on
+filetype indent on
 
 
