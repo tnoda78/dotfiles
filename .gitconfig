@@ -6,7 +6,7 @@
   co = checkout
   ci = commit
   st = status
-  br = branch
+  br = branch --color
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   lg = log
   ad = add
