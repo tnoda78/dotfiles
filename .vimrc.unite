@@ -2,19 +2,26 @@
 "  unite.vim 設定
 " -------------------------------------------------------
 
-" 入力モードで開始する
-let g:unite_enable_start_insert=0
-" バッファー一覧
-noremap <C-U><C-B> :Unite buffer<CR>
-" ファイル一覧
-noremap <C-U><C-F> :UniteWithBufferDir -buffer-name=files file<CR>
-" 最近使ったファイル
-noremap <C-U><C-R> :Unite file_mru<CR>
-" レジスタ一覧
-noremap <C-U><C-Y> :Unite -buffer-name=register register<CR>
-" ファイルとバッファ
-noremap <C-U><C-U> :Unite buffer file_mru<CR>
-" 全部
-noremap <C-U><C-A> :Unite UniteWithBufferDir -buffer-name=files buffer file_mru bookmark file<CR>
-
-
+"" unite.vim {{{
+" The prefix key.
+nnoremap    [unite]   <Nop>
+nmap    <Leader>f [unite]
+ 
+" unite.vim keymap
+"
+" https://github.com/alwei/dotfiles/blob/3760650625663f3b08f24bc75762ec843ca7e112/.vimrc
+nnoremap [unite]u  :<C-u>Unite -no-split<Space>
+nnoremap <silent> [unite]f :<C-u>Unite<Space>buffer<CR>
+nnoremap <silent> [unite]b :<C-u>Unite<Space>bookmark<CR>
+nnoremap <silent> [unite]m :<C-u>Unite<Space>file_mru<CR>
+nnoremap <silent> [unite]r :<C-u>UniteWithBufferDir file<CR>
+nnoremap <silent> ,vr :UniteResume<CR>
+ 
+" vinarise
+let g:vinarise_enable_auto_detect = 1
+ 
+" unite-build map
+nnoremap <silent> ,vb :Unite build<CR>
+nnoremap <silent> ,vcb :Unite build:!<CR>
+nnoremap <silent> ,vch :UniteBuildClearHighlight<CR>
+" }}}
