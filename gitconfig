@@ -1,18 +1,47 @@
 [user]
-	name = t_noda
-	email = t_noda@kogasoftware.com
+  name = t_noda
+  email = t_noda@kogasoftware.com
+
+[color]
+  ui = auto
 
 [alias]
-  co = checkout
-  ci = commit
-  st = status
-  br = branch --color
-  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  lg = log
   ad = add
-  tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
-  ls= log --oneline
+  br = branch
+  ci = commit
+  cia = commit --amend
+  cih = commit --amend -C HEAD
+  cih1 = commit --amend -c HEAD@{1}
+  co = checkout
+  d = diff
+  dc = diff --cached
+  dn = diff --name-only
+  dn = diff --color-words
   df = diff
+  ft = fetch
+  fp = fetch --prune
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  l = log --oneline -n 20
+  lg = log
+  lgraph = log --oneline --graph --decorate --all -n 20
+  lp = log --oneline -n 20 -p
+  ls = log --stat -n 1
+  log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d'
+  pl = pull
+  ps = push
+  psh = push origin HEAD
+  rb = rebase
+  rbi = rebase -i
+  rbh = rebase HEAD
+  rbo = rebase --onto
+  rs = reset
+  rsh = reset --hard
+  sh = show
+  so = remote show origin
+  st = status
+  sm = submodule
+  mg = merge --no-ff --no-commit
+  tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 
 [color]
   diff = auto
