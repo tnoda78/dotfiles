@@ -21,6 +21,7 @@ NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'vim-scripts/surround.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'kien/ctrlp.vim'
 
 filetype plugin on
 filetype indent on
