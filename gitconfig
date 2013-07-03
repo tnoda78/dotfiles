@@ -2,8 +2,11 @@
   name = t_noda
   email = t_noda@kogasoftware.com
 
-[color]
-  ui = auto
+[core]
+  editor = vim
+
+[merge]
+  tool = vimdiff
 
 [alias]
   ad = add
@@ -45,6 +48,7 @@
   tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
 
 [color]
+  ui = auto
   diff = auto
   tatus = auto
   ranch = auto
