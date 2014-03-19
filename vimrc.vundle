@@ -31,5 +31,3 @@ NeoBundle 'jnwhiteh/vim-golang'
 
 filetype plugin on
 filetype indent on
-
-

@@ -19,4 +19,3 @@ hi clear CursorLine
 highlight CursorLine ctermbg=black guibg=black
 
 set lazyredraw
-

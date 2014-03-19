@@ -6,5 +6,3 @@ set ignorecase    " 大文字、小文字を区別しない
 set smartcase     " 大文字が入力される前まで大文字小文字の区別をしない
 set incsearch     " インクリメンタル検索
 set hlsearch      " 検索のハイライト表示
-
-

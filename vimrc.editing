@@ -3,8 +3,7 @@
 "-------------------------------------------------------------------------------
 
 set noimdisable             " ノーマルモードでIMEを無効化
-set iminsert=0 imsearch=0   
+set iminsert=0 imsearch=0
 set noimcmdline
 
 set expandtab                " Tabキーを空白に変換
-
