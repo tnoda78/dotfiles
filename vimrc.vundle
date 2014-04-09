@@ -28,6 +28,7 @@ NeoBundle 'mattn/habatobi-vim'
 NeoBundle 'roalddevries/yaml.vim'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'basyura/unite-rails'
 
 filetype plugin on
 filetype indent on
