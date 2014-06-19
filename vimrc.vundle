@@ -18,11 +18,11 @@ NeoBundle 'tpope/vim-markdown'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimproc'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'vim-jp/vimdoc-ja'
 NeoBundle 'vim-scripts/surround.vim'
 NeoBundle 'thinca/vim-quickrun'
 NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'gregsexton/gitv'
 NeoBundle 'mattn/habatobi-vim'
 NeoBundle 'roalddevries/yaml.vim'
@@ -32,3 +32,5 @@ NeoBundle 'basyura/unite-rails'
 
 filetype plugin on
 filetype indent on
+
+autocmd QuickFixCmdPost *grep* cwindow
