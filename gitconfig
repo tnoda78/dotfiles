@@ -52,3 +52,5 @@
   diff = auto
   tatus = auto
   ranch = auto
+[ghq]
+	root = /Users/tnoda/src

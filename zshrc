@@ -14,3 +14,9 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/home/tnoda/.rbenv/shims:/home/tnoda/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+eval "$(rbenv init -)"
+
+# Golang
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
+
