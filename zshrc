@@ -21,6 +21,9 @@ export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/go
 
+# peco, ghq
+alias pcd='cd $(ghq list -p | peco)'
+
 # Ctrl-r use peco
 function peco-select-history() {
     local tac
