@@ -53,4 +53,4 @@
   tatus = auto
   ranch = auto
 [ghq]
-	root = /Users/tnoda/src
+	root = ~/src

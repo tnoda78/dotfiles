@@ -39,3 +39,8 @@ nmap <C-\> :NERDTreeToggle<CR>
 
 " ヘルプの優先順位
 set helplang=ja,en
+
+" for golang
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set rtp+=$GOROOT/misc/vim
+set completeopt=menu,preview

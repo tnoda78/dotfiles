@@ -19,6 +19,7 @@ eval "$(rbenv init -)"
 # Golang
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
+export GOROOT=/usr/local/go
 
 # Ctrl-r use peco
 function peco-select-history() {
