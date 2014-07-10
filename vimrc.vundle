@@ -10,6 +10,7 @@ endif
 
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'mattn/zencoding-vim'
+NeoBundle 'mattn/flappyvird-vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'tpope/vim-rails'
