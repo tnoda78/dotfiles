@@ -52,5 +52,6 @@
   diff = auto
   tatus = auto
   ranch = auto
+
 [ghq]
-	root = ~/src
+  root = ~/src
