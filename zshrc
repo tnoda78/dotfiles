@@ -20,9 +20,11 @@ eval "$(rbenv init -)"
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
 
 # peco, ghq
 alias pcd='cd $(ghq list -p | peco)'
+alias pim='vim $(git ls-files | peco)'
 
 # Ctrl-r use peco
 function peco-select-history() {
