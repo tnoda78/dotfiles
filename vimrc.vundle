@@ -5,11 +5,11 @@ filetype off
 
 if has('vim_starting')
   set rtp+=~/.vim/neobundle.vim.git/
-  call neobundle#rc(expand('~/.vim/bundle'))
 endif
 
+call neobundle#begin(expand('~/.vim/bundle/'))
+
 NeoBundle 'nanotech/jellybeans.vim'
-NeoBundle 'mattn/zencoding-vim'
 NeoBundle 'mattn/flappyvird-vim'
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'scrooloose/nerdtree'
@@ -31,6 +31,8 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'toyamarinyon/vim-swift'
+
+call neobundle#end()
 
 filetype plugin on
 filetype indent on
