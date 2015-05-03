@@ -23,6 +23,8 @@ export GOROOT=/usr/local/go
 
 # peco, ghq
 alias pcd='cd $(ghq list -p | peco)'
+alias u='bundle exec unicorn'
+alias hu='hugo server -w'
 
 # Ctrl-r use peco
 function peco-select-history() {
