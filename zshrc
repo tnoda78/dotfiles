@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="afowler"
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git rails tmux bundler history ruby)
+plugins=(git rails bundler history ruby)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -19,7 +19,7 @@ eval "$(rbenv init -)"
 # Golang
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOROOT/bin
 
 # peco, ghq
