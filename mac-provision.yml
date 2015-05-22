@@ -20,6 +20,7 @@
       - { name: tmux }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
+      - { name: atom }
       - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: iterm2 }

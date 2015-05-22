@@ -10,6 +10,7 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(git rails bundler history ruby)
 
+source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
