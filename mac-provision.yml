@@ -9,6 +9,7 @@
     homebrew_packages:
       - { name: ansible }
       - { name: curl }
+      - { name: elixir }
       - { name: git }
       - { name: go, install_options: --cross-compile-all }
       - { name: node }

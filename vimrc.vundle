@@ -31,6 +31,7 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'basyura/unite-rails'
 NeoBundle 'toyamarinyon/vim-swift'
+NeoBundle 'elixir-lang/vim-elixir'
 
 call neobundle#end()
 
