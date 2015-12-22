@@ -26,9 +26,10 @@ export PATH=$PATH:$GOROOT/bin
 # peco, ghq
 alias pcd='cd $(ghq list -p | peco)'
 alias pim='vim $(git ls-files | peco)'
+alias ls='ls --color'
 
 # typo
-alias ls='ls'
+alias sl='ls'
 
 # Ctrl-r use peco
 function peco-select-history() {
