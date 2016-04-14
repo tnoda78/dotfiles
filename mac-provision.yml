@@ -1,11 +1,11 @@
 - hosts: localhost
   connection: local
-  sudo: no
+  become: no
   vars:
     homebrew_taps:
-      - homebrew/binary
-      - homebrew/dupes
-      - caskroom/cask
+      - 'homebrew/binary'
+      - 'homebrew/dupes'
+      - 'homebrew/services'
     homebrew_packages:
       - { name: ansible }
       - { name: curl }
@@ -13,7 +13,13 @@
       - { name: git }
       - { name: go, install_options: --cross-compile-all }
       - { name: node }
+      - { name: heroku-toolbelt }
       - { name: jq }
+      - { name: libxml2 }
+      - { name: libxslt }
+      - { name: libiconv }
+      - { name: mysql56 }
+      - { name: pandoc }
       - { name: peco }
       - { name: python }
       - { name: rbenv }
@@ -28,6 +34,10 @@
       - { name: java }
       - { name: vagrant }
       - { name: virtualbox }
+    npm_packages:
+      - { name: markdown-pdf }
+      - { name: yo }
+      - { name: generator-hubot }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
@@ -68,3 +78,6 @@
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
       args:
         creates: ~/.oh-my-zsh/
+    - name: npmパッケージのインストール
+      npm: name={{ item.name }} global=yes
+      with_items: npm_packages
