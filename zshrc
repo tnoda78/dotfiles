@@ -8,23 +8,31 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="afowler"
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git rails tmux bundler history ruby)
+plugins=(git rails bundler history ruby)
 
+source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="/home/tnoda/.rbenv/shims:/home/tnoda/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 eval "$(rbenv init -)"
 
 # Golang
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
-export GOROOT=/usr/local/go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOROOT/bin
+export PATH="/usr/local/heroku/bin:$PATH"
 
 # peco, ghq
 alias pcd='cd $(ghq list -p | peco)'
 alias u='bundle exec unicorn'
 alias hu='hugo server -w'
+alias pim='vim $(git ls-files | peco)'
+alias ls='ls --color'
+
+# typo
+alias sl='ls'
 
 # Ctrl-r use peco
 function peco-select-history() {

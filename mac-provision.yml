@@ -1,0 +1,70 @@
+- hosts: localhost
+  connection: local
+  sudo: no
+  vars:
+    homebrew_taps:
+      - homebrew/binary
+      - homebrew/dupes
+      - caskroom/cask
+    homebrew_packages:
+      - { name: ansible }
+      - { name: curl }
+      - { name: elixir }
+      - { name: git }
+      - { name: go, install_options: --cross-compile-all }
+      - { name: node }
+      - { name: jq }
+      - { name: peco }
+      - { name: python }
+      - { name: rbenv }
+      - { name: ruby-build }
+      - { name: tmux }
+      - { name: zsh, install_options: disable-etcdir }
+    homebrew_cask_packages:
+      - { name: atom }
+      - { name: google-chrome }
+      - { name: google-japanese-ime }
+      - { name: iterm2 }
+      - { name: java }
+      - { name: vagrant }
+      - { name: virtualbox }
+  tasks:
+    # homebrew
+    - name: homebrewのtapリポジトリを追加
+      homebrew_tap: tap={{ item }} state=present
+      with_items: homebrew_taps
+
+    - name: brew パッケージをインストール
+      homebrew: >
+        name={{ item.name }}
+        state={{ item.state | default('latest') }}
+        install_options={{
+          item.install_options | default() | join(',')
+          if item.install_options is not string
+          else item.install_options
+        }}
+      with_items: homebrew_packages
+      register: brew_result
+    - name: brew パッケージの情報保存先ディレクトリを作成
+      file: path=brew_info state=directory
+    - name: brew パッケージの情報を保存
+      shell: brew info {{ item }} > brew_info/{{ item }}
+      with_items: brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+
+    # cask
+    - name: homebrew_cask のインストール
+      homebrew: name=brew-cask state=latest
+    - name: cask パッケージをインストール
+      homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }}
+      with_items: homebrew_cask_packages
+      register: cask_result
+    - name: cask パッケージの情報保存先ディレクトリを作成
+      file: path=cask_info state=directory
+    - name: cask パッケージの情報を保存
+      shell: brew cask info {{ item }} > cask_info/{{ item }}
+      with_items: cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list
+    # oh-my-zsh
+    - name: oh-my-zsh のインストール
+      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+      args:
+        creates: ~/.oh-my-zsh/

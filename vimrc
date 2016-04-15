@@ -8,6 +8,4 @@ source ~/dotfiles/vimrc.encoding
 source ~/dotfiles/vimrc.moving
 source ~/dotfiles/vimrc.apperance
 source ~/dotfiles/vimrc.editing
-source ~/dotfiles/vimrc.unite
-
-
+source ~/dotfiles/vimrc.ctrlp
