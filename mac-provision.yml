@@ -21,6 +21,8 @@
       - { name: mysql56 }
       - { name: pandoc }
       - { name: peco }
+      - { name: phantomjs }
+      - { name: postgresql }
       - { name: python }
       - { name: rbenv }
       - { name: ruby-build }
@@ -32,12 +34,15 @@
       - { name: google-japanese-ime }
       - { name: iterm2 }
       - { name: java }
+      - { name: send-to-kindle }
       - { name: vagrant }
       - { name: virtualbox }
     npm_packages:
       - { name: markdown-pdf }
       - { name: yo }
       - { name: generator-hubot }
+      - { name: webpack }
+      - { name: webpack-dev-server }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
