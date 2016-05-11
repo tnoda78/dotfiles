@@ -1,0 +1,39 @@
+" curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+" sh ./installer.sh ~/.vim/dein
+
+if &compatible
+  set nocompatible
+endif
+set runtimepath^=~/.vim/dein/repos/github.com/Shougo/dein.vim
+
+call dein#begin(expand('~/.cache/dein'))
+
+call dein#add('Shougo/dein.vim')
+
+call dein#add('nanotech/jellybeans.vim')
+call dein#add('mattn/flappyvird-vim')
+call dein#add('derekwyatt/vim-scala')
+call dein#add('scrooloose/nerdtree')
+call dein#add('tpope/vim-rails')
+call dein#add('tpope/vim-haml')
+call dein#add('slim-template/vim-slim')
+call dein#add('tpope/vim-markdown')
+call dein#add('tpope/vim-fugitive')
+call dein#add('vim-jp/vimdoc-ja')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('gregsexton/gitv')
+call dein#add('mattn/habatobi-vim')
+call dein#add('roalddevries/yaml.vim')
+call dein#add('jnwhiteh/vim-golang')
+call dein#add('toyamarinyon/vim-swift')
+call dein#add('elixir-lang/vim-elixir')
+call dein#add('kien/ctrlp.vim')
+call dein#add('isRuslan/vim-es6')
+
+call dein#end()
+
+filetype plugin indent on
+
+if dein#check_install()
+  call dein#install()
+endif

@@ -1,6 +1,5 @@
 " 分割した設定ファイルを読み込み
-" vundle.vim
-source ~/dotfiles/vimrc.vundle
+source ~/dotfiles/vimrc.dein
 source ~/dotfiles/vimrc.basic
 source ~/dotfiles/vimrc.indent
 source ~/dotfiles/vimrc.search
