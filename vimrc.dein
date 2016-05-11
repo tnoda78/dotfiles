@@ -28,7 +28,7 @@ call dein#add('jnwhiteh/vim-golang')
 call dein#add('toyamarinyon/vim-swift')
 call dein#add('elixir-lang/vim-elixir')
 call dein#add('kien/ctrlp.vim')
-call dein#add('isRuslan/vim-es6')
+call dein#add('othree/yajs')
 
 call dein#end()
 
