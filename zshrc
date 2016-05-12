@@ -29,7 +29,6 @@ alias pcd='cd $(ghq list -p | peco)'
 alias u='bundle exec unicorn'
 alias hu='hugo server -w'
 alias pim='vim $(git ls-files | peco)'
-alias ls='ls --color'
 
 # typo
 alias sl='ls'
