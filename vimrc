@@ -8,3 +8,4 @@ source ~/dotfiles/vimrc.moving
 source ~/dotfiles/vimrc.apperance
 source ~/dotfiles/vimrc.editing
 source ~/dotfiles/vimrc.ctrlp
+source ~/dotfiles/vimrc.vim-go
