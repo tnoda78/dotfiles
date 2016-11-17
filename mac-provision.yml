@@ -26,6 +26,7 @@
       - { name: postgresql }
       - { name: python }
       - { name: rbenv, state: 'latest' }
+      - { name: redis }
       - { name: ruby-build, state: 'latest' }
       - { name: tmux, state: 'latest' }
       - { name: zsh, install_options: disable-etcdir }
