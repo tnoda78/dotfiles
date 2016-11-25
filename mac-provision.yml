@@ -10,6 +10,7 @@
       - { name: ansible, state: 'latest' }
       - { name: curl, state: 'latest' }
       - { name: elixir }
+      - { name: ffmpeg }
       - { name: git, state: 'latest' }
       - { name: go }
       - { name: graphviz }
@@ -32,6 +33,7 @@
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
       - { name: atom }
+      - { name: docker }
       - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: iterm2 }
