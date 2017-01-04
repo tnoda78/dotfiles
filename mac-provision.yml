@@ -14,14 +14,13 @@
       - { name: git, state: 'latest' }
       - { name: go }
       - { name: graphviz }
-      - { name: pandoc }
-      - { name: node }
       - { name: heroku-toolbelt, state: 'latest' }
+      - { name: imagemagick }
       - { name: jq }
       - { name: libxml2 }
       - { name: libxslt }
       - { name: libiconv }
-      - { name: mysql56 }
+      - { name: node }
       - { name: pandoc }
       - { name: peco }
       - { name: phantomjs }
@@ -31,6 +30,7 @@
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
       - { name: tmux, state: 'latest' }
+      - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
       - { name: atom }
@@ -43,6 +43,7 @@
       - { name: vagrant }
       - { name: virtualbox }
     npm_packages:
+      - { name: babel-core }
       - { name: markdown-pdf }
       - { name: yo }
       - { name: generator-hubot }
