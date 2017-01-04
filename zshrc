@@ -20,7 +20,7 @@ eval "$(rbenv init -)"
 # Golang
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
-if [ "$(uname)" == 'Darwin' ]; then
+if [ "$(uname)" = 'Darwin' ]; then
     export GOROOT=/usr/local/opt/go/libexec/
 elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
     export GOROOT=/usr/lib/go
