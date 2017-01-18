@@ -22,8 +22,8 @@ export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 if [ "$(uname)" = 'Darwin' ]; then
     export GOROOT=/usr/local/opt/go/libexec/
-elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
-    export GOROOT=/usr/lib/go
+#elif [ "$(expr substr $(uname -s) 1 5)" == 'Linux' ]; then
+#    export GOROOT=/usr/lib/go
 fi
 export PATH=$PATH:$GOROOT/bin
 export PATH="/usr/local/heroku/bin:$PATH"
