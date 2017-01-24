@@ -54,5 +54,4 @@ export XMODIFIERS=@im=fcitx
 export DefaultIMModule=fcitx
 fcitx-autostart
 
-
 exec awesome
