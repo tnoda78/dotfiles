@@ -39,7 +39,8 @@
       - { name: google-japanese-ime }
       - { name: iterm2 }
       - { name: java }
-      - { name: send-to-kindle }
+      - { name: libreoffice }
+        #- { name: send-to-kindle }
       - { name: vagrant }
       - { name: virtualbox }
     npm_packages:
@@ -49,6 +50,7 @@
       - { name: generator-hubot }
       - { name: webpack }
       - { name: webpack-dev-server }
+      - { name: fony }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加

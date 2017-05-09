@@ -4,6 +4,7 @@
 
 [core]
   editor = vim
+  autoCRLF = false
 
 [merge]
   tool = vimdiff
@@ -55,3 +56,5 @@
 
 [ghq]
   root = ~/src
+[http]
+	sslVerify = false

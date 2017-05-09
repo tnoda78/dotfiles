@@ -31,6 +31,7 @@ call dein#add('kien/ctrlp.vim')
 call dein#add('othree/yajs')
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
 call dein#add('nono/vim-handlebars')
+call dein#add('rust-lang/rust.vim')
 
 call dein#end()
 
