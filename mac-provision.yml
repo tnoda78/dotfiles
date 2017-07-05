@@ -17,15 +17,18 @@
       - { name: heroku-toolbelt, state: 'latest' }
       - { name: imagemagick }
       - { name: jq }
+      - { name: kotlin }
       - { name: libxml2 }
       - { name: libxslt }
       - { name: libiconv }
+      - { name: mongodb@2.6 }
       - { name: node }
       - { name: pandoc }
       - { name: peco }
       - { name: phantomjs }
       - { name: postgresql }
       - { name: python }
+      - { name: qt@5.5 }
       - { name: rbenv, state: 'latest' }
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
@@ -45,6 +48,7 @@
       - { name: virtualbox }
     npm_packages:
       - { name: babel-core }
+      - { name: create-react-app }
       - { name: markdown-pdf }
       - { name: yo }
       - { name: generator-hubot }

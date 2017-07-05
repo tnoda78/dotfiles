@@ -2,10 +2,6 @@
   name = tnoda78
   email = tn78adsl@gmail.com
 
-[core]
-  editor = vim
-  autoCRLF = false
-
 [merge]
   tool = vimdiff
 
