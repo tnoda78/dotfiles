@@ -32,6 +32,7 @@ call dein#add('othree/yajs')
 call dein#add('Matt-Deacalion/vim-systemd-syntax')
 call dein#add('nono/vim-handlebars')
 call dein#add('rust-lang/rust.vim')
+call dein#add('joukevandermaas/vim-ember-hbs')
 
 call dein#end()
 
