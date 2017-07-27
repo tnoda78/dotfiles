@@ -32,6 +32,7 @@
       - { name: rbenv, state: 'latest' }
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
+      - { name: terraform }
       - { name: tmux, state: 'latest' }
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
