@@ -8,6 +8,7 @@
       - 'homebrew/services'
     homebrew_packages:
       - { name: ansible, state: 'latest' }
+      - { name: awscli }
       - { name: curl, state: 'latest' }
       - { name: elixir }
       - { name: ffmpeg }
@@ -48,6 +49,7 @@
       - { name: vagrant }
       - { name: virtualbox }
     npm_packages:
+      - { name: "@angular/cli" }
       - { name: babel-core }
       - { name: create-react-app }
       - { name: markdown-pdf }
