@@ -12,6 +12,7 @@
       - { name: curl, state: 'latest' }
       - { name: elixir }
       - { name: ffmpeg }
+      - { name: fish }
       - { name: git, state: 'latest' }
       - { name: go }
       - { name: graphviz }
@@ -52,12 +53,13 @@
       - { name: "@angular/cli" }
       - { name: babel-core }
       - { name: create-react-app }
+      - { name: fony }
       - { name: markdown-pdf }
-      - { name: yo }
+      - { name: n }
       - { name: generator-hubot }
       - { name: webpack }
       - { name: webpack-dev-server }
-      - { name: fony }
+      - { name: yo }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
