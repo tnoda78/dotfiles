@@ -53,12 +53,14 @@
       - { name: "@angular/cli" }
       - { name: babel-core }
       - { name: create-react-app }
+      - { name: create-react-native-app }
       - { name: fony }
       - { name: markdown-pdf }
       - { name: n }
       - { name: generator-hubot }
       - { name: webpack }
       - { name: webpack-dev-server }
+      - { name: watchman }
       - { name: yo }
   tasks:
     # homebrew
