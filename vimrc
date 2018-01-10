@@ -10,5 +10,3 @@ source ~/dotfiles/vimrc.editing
 source ~/dotfiles/vimrc.ctrlp
 source ~/dotfiles/vimrc.vim-go
 source ~/dotfiles/vimrc.rust
-
-set binary noeol

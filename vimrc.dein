@@ -36,6 +36,7 @@ call dein#add('joukevandermaas/vim-ember-hbs')
 call dein#add('hashivim/vim-terraform')
 call dein#add('leafgarland/typescript-vim')
 call dein#add('pangloss/vim-javascript')
+call dein#add('posva/vim-vue')
 
 call dein#end()
 
