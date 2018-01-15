@@ -23,7 +23,7 @@
       - { name: libxml2 }
       - { name: libxslt }
       - { name: libiconv }
-      - { name: mongodb@2.6 }
+      - { name: mongodb }
       - { name: node }
       - { name: pandoc }
       - { name: peco }
@@ -39,16 +39,15 @@
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
-      - { name: atom }
       - { name: docker }
       - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: iterm2 }
       - { name: java }
-      - { name: libreoffice }
+      - { name: skype }
+      - { name: slack }
         #- { name: send-to-kindle }
       - { name: vagrant }
-      - { name: virtualbox }
     npm_packages:
       - { name: "@angular/cli" }
       - { name: babel-core }
