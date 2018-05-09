@@ -33,9 +33,10 @@
       - { name: node }
       - { name: pandoc }
       - { name: peco }
+      - { name: pipenv }
       - { name: phantomjs }
       - { name: postgresql }
-      - { name: python }
+      - { name: pyenv }
       - { name: qt@5.5 }
       - { name: rbenv, state: 'latest' }
       - { name: redis }

@@ -62,3 +62,8 @@ export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Command
 PATH=${JAVA_HOME}/bin:${PATH}
 
 export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
+
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
