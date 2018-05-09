@@ -6,6 +6,7 @@
       - 'homebrew/binary'
       - 'homebrew/dupes'
       - 'homebrew/services'
+      - 'caskroom/versions'
     homebrew_packages:
       - { name: ansible, state: 'latest' }
       - { name: awscli }
@@ -15,15 +16,20 @@
       - { name: fish }
       - { name: git, state: 'latest' }
       - { name: go }
+      - { name: gradle }
       - { name: graphviz }
       - { name: heroku-toolbelt, state: 'latest' }
+      - { name: hugo }
       - { name: imagemagick }
       - { name: jq }
       - { name: kotlin }
       - { name: libxml2 }
       - { name: libxslt }
       - { name: libiconv }
+      - { name: mecab }
+      - { name: mecab-ipadic }
       - { name: mongodb }
+      - { name: mysql }
       - { name: node }
       - { name: pandoc }
       - { name: peco }
@@ -34,20 +40,26 @@
       - { name: rbenv, state: 'latest' }
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
+      - { name: sbt }
       - { name: terraform }
       - { name: tmux, state: 'latest' }
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
+      - { name: android-studio }
       - { name: docker }
       - { name: google-chrome }
       - { name: google-japanese-ime }
+      - { name: insomniax }
       - { name: iterm2 }
       - { name: java }
+      - { name: java8 }
+      - { name: karabiner-elements }
       - { name: skype }
       - { name: slack }
         #- { name: send-to-kindle }
       - { name: vagrant }
+      - { name: visual-studio-code }
     npm_packages:
       - { name: "@angular/cli" }
       - { name: babel-core }
@@ -56,6 +68,7 @@
       - { name: fony }
       - { name: markdown-pdf }
       - { name: n }
+      - { name: minifier }
       - { name: generator-hubot }
       - { name: webpack }
       - { name: webpack-dev-server }

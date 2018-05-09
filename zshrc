@@ -57,3 +57,8 @@ export RUBYOPT="-W0"
 
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
+
+export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
+PATH=${JAVA_HOME}/bin:${PATH}
+
+export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
