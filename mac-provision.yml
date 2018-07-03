@@ -56,6 +56,7 @@
       - { name: java }
       - { name: java8 }
       - { name: karabiner-elements }
+      - { name: licecap }
       - { name: skype }
       - { name: slack }
         #- { name: send-to-kindle }
