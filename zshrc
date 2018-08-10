@@ -67,3 +67,6 @@ export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+# SBT
+export SBT_LAUNCH=/usr/local/Cellar/sbt/1.1.0/libexec/bin/sbt-launch.jar
