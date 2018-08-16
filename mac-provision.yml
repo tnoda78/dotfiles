@@ -6,11 +6,11 @@
       - 'homebrew/binary'
       - 'homebrew/dupes'
       - 'homebrew/services'
-      - 'caskroom/versions'
     homebrew_packages:
       - { name: ansible, state: 'latest' }
       - { name: awscli }
       - { name: curl, state: 'latest' }
+      - { name: dep }
       - { name: elixir }
       - { name: ffmpeg }
       - { name: fish }
@@ -23,6 +23,7 @@
       - { name: imagemagick }
       - { name: jq }
       - { name: kotlin }
+      - { name: libmagic }
       - { name: libxml2 }
       - { name: libxslt }
       - { name: libiconv }
@@ -49,6 +50,7 @@
     homebrew_cask_packages:
       - { name: android-studio }
       - { name: docker }
+      - { name: firefox }
       - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: insomniax }
