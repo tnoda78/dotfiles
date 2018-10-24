@@ -46,7 +46,6 @@
       - { name: sbt }
       - { name: scala }
       - { name: terraform }
-      - { name: tmux, state: 'latest' }
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
@@ -63,7 +62,6 @@
       - { name: licecap }
       - { name: skype }
       - { name: slack }
-        #- { name: send-to-kindle }
       - { name: vagrant }
       - { name: visual-studio-code }
     npm_packages:
