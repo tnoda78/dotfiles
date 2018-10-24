@@ -11,6 +11,7 @@
       - { name: awscli }
       - { name: curl, state: 'latest' }
       - { name: dep }
+      - { name: direnv }
       - { name: elixir }
       - { name: ffmpeg }
       - { name: fish }
@@ -43,6 +44,7 @@
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
       - { name: sbt }
+      - { name: scala }
       - { name: terraform }
       - { name: tmux, state: 'latest' }
       - { name: yarn }
