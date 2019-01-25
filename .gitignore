@@ -1,4 +1,4 @@
 cask_info/
 brew_info/
 installer.sh
-mac-provision.retry
+*.retry

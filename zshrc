@@ -58,15 +58,15 @@ export RUBYOPT="-W0"
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
+#export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
+export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
 PATH=${JAVA_HOME}/bin:${PATH}
 
 export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
 
 # Python
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# SBT
-export SBT_LAUNCH=/usr/local/Cellar/sbt/1.1.0/libexec/bin/sbt-launch.jar
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
+export PATH="/Applications/Sencha/Test/2_2_1_83/stc:$PATH"

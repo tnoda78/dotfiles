@@ -3,11 +3,8 @@
   become: no
   vars:
     homebrew_taps:
-      - 'homebrew/binary'
-      - 'homebrew/dupes'
       - 'homebrew/services'
     homebrew_packages:
-      - { name: ansible, state: 'latest' }
       - { name: awscli }
       - { name: curl, state: 'latest' }
       - { name: dep }
@@ -17,16 +14,12 @@
       - { name: fish }
       - { name: git, state: 'latest' }
       - { name: go }
-      - { name: gradle }
       - { name: graphviz }
-      - { name: heroku-toolbelt, state: 'latest' }
       - { name: hugo }
       - { name: imagemagick }
       - { name: jq }
-      - { name: kotlin }
+      - { name: jenv }
       - { name: libmagic }
-      - { name: libxml2 }
-      - { name: libxslt }
       - { name: libiconv }
       - { name: mecab }
       - { name: mecab-ipadic }
@@ -35,16 +28,11 @@
       - { name: node }
       - { name: pandoc }
       - { name: peco }
-      - { name: pipenv }
-      - { name: phantomjs }
       - { name: postgresql }
       - { name: pyenv }
-      - { name: qt@5.5 }
       - { name: rbenv, state: 'latest' }
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
-      - { name: sbt }
-      - { name: scala }
       - { name: terraform }
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
