@@ -40,7 +40,6 @@
       - { name: android-studio }
       - { name: docker }
       - { name: firefox }
-      - { name: google-chrome }
       - { name: google-japanese-ime }
       - { name: insomniax }
       - { name: iterm2 }

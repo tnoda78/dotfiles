@@ -42,7 +42,6 @@ call dein#add('zchee/vim-vgo')
 call dein#add('ElmCast/elm-vim')
 call dein#add('leafgarland/typescript-vim')
 call dein#add('editorconfig/editorconfig-vim')
-call dein#add('vim-syntastic/syntastic')
 
 call dein#end()
 
