@@ -34,6 +34,7 @@
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
       - { name: terraform }
+      - { name: tree }
       - { name: yarn }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
