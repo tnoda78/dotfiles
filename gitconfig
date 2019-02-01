@@ -1,8 +1,6 @@
 [user]
   name = tnoda78
   email = tn78adsl@gmail.com
-  #name = tnoda_koga
-  #email = t_noda@kogasoftware.com
 
 [merge]
   tool = vimdiff
@@ -21,13 +19,14 @@
   dn = diff --name-only
   dn = diff --color-words
   df = diff
+  dfh = diff HEAD
   ft = fetch
   fp = fetch --prune
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  l = log --oneline -n 20
+  l = log --oneline -n 100
   lg = log
   lgraph = log --oneline --graph --decorate --all -n 20
-  lp = log --oneline -n 20 -p
+  lp = log --oneline -n 100 -p
   ls = log --stat -n 1
   log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d'
   pl = pull
