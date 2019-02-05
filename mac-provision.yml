@@ -65,7 +65,6 @@
       - { name: webpack }
       - { name: webpack-dev-server }
       - { name: watchman }
-      - { name: vue-cli }
       - { name: yo }
   tasks:
     # homebrew
