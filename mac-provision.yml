@@ -4,6 +4,7 @@
   vars:
     homebrew_taps:
       - 'homebrew/services'
+      - 'heroku/brew'
     homebrew_packages:
       - { name: awscli }
       - { name: curl, state: 'latest' }
@@ -16,6 +17,7 @@
       - { name: go }
       - { name: graphviz }
       - { name: hugo }
+      - { name: heroku }
       - { name: imagemagick }
       - { name: jq }
       - { name: jenv }
@@ -36,6 +38,7 @@
       - { name: terraform }
       - { name: tree }
       - { name: yarn }
+      - { name: zlib }
       - { name: zsh, install_options: disable-etcdir }
     homebrew_cask_packages:
       - { name: android-studio }
@@ -48,6 +51,7 @@
       - { name: java8 }
       - { name: karabiner-elements }
       - { name: licecap }
+      - { name: sequel-pro }
       - { name: skype }
       - { name: slack }
       - { name: vagrant }

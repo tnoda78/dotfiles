@@ -71,3 +71,7 @@ export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
 #eval "$(pyenv init -)"
 export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
 export PATH="/Applications/Sencha/Test/2_2_1_83/stc:$PATH"
+
+export PYENV_ROOT=$HOME/.pyenv
+export PATH=$PYENV_ROOT/bin:$PATH
+eval "$(pyenv init -)"
