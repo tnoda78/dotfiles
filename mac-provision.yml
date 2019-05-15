@@ -45,6 +45,7 @@
       - { name: docker }
       - { name: firefox }
       - { name: google-japanese-ime }
+      - { name: insomnia }
       - { name: insomniax }
       - { name: iterm2 }
       - { name: java }
