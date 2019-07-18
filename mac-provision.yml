@@ -48,25 +48,13 @@
       - { name: google-japanese-ime }
       - { name: insomnia }
       - { name: iterm2 }
-      - { name: java }
+      - { name: intellij-idea-ce }
       - { name: licecap }
       - { name: sequel-pro }
       - { name: vagrant }
       - { name: visual-studio-code }
     npm_packages:
-      - { name: "@angular/cli" }
-      - { name: babel-core }
-      - { name: create-react-app }
-      - { name: create-react-native-app }
-      - { name: fony }
       - { name: markdown-pdf }
-      - { name: n }
-      - { name: minifier }
-      - { name: generator-hubot }
-      - { name: webpack }
-      - { name: webpack-dev-server }
-      - { name: watchman }
-      - { name: yo }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
