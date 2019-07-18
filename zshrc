@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="afowler"
 HIST_STAMPS="yyyy-mm-dd"
 
-plugins=(git rails bundler history ruby)
+plugins=(git bundler history ruby)
 
 source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
@@ -75,3 +75,5 @@ export PATH="/Applications/Sencha/Test/2_2_1_83/stc:$PATH"
 export PYENV_ROOT=$HOME/.pyenv
 export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
+
+export SBT_OPTS='-Xmx2G -Xss2M'
