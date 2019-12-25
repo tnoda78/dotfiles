@@ -8,12 +8,14 @@
     homebrew_packages:
       - { name: awscli }
       - { name: curl, state: 'latest' }
+      - { name: cabal-install }
       - { name: dep }
       - { name: direnv }
       - { name: elixir }
       - { name: ffmpeg }
       - { name: fish }
       - { name: git, state: 'latest' }
+      - { name: ghc }
       - { name: ghq }
       - { name: go }
       - { name: graphviz }
