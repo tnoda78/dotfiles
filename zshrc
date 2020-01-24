@@ -14,7 +14,7 @@ source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games":$PATH
 eval "$(rbenv init -)"
 
 # Golang

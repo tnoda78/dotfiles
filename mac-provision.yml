@@ -28,7 +28,6 @@
       - { name: libiconv }
       - { name: mecab }
       - { name: mecab-ipadic }
-      - { name: mongodb }
       - { name: mysql }
       - { name: node }
       - { name: pandoc }
@@ -50,9 +49,9 @@
       - { name: google-japanese-ime }
       - { name: insomnia }
       - { name: iterm2 }
-      - { name: intellij-idea-ce }
       - { name: licecap }
       - { name: sequel-pro }
+      - { name: slack }
       - { name: vagrant }
       - { name: visual-studio-code }
     npm_packages:
