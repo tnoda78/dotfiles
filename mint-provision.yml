@@ -4,7 +4,6 @@
   vars:
     apt_packages:
       - { name: jq }
-      - { name: golang }
       - { name: gnome-terminal }
       - { name: ruby-build }
       - { name: rbenv }
