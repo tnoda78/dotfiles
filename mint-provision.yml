@@ -1,9 +1,23 @@
 - hosts: localhost
   connection: local
-  become: no
+  become: yes
   vars:
     apt_packages:
       - { name: jq }
+      - { name: golang }
+      - { name: gnome-terminal }
+      - { name: ruby-build }
+      - { name: rbenv }
+      - { name: vim }
+      - { name: zsh }
+
+      #- { name: nodejs }
+      #- { name: npm }
+      # sudo npm cache clean
+      # sudo npm install -g n
+      # sudo n stable
+      # sudo n lts
+      # sudo apt-get purge nodejs npm
   tasks:
     # apt
     - name: apt-get でインストール
@@ -12,9 +26,3 @@
         state={{ item.state | default('present') }}
         update_cache=yes
       with_items: '{{ apt_packages }}'
-
-   # oh-my-zsh
-    - name: oh-my-zsh のインストール
-      shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-      args:
-        creates: ~/.oh-my-zsh/
