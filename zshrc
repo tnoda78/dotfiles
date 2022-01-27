@@ -33,6 +33,7 @@ alias pcd='cd $(ghq list -p | peco)'
 alias u='bundle exec unicorn'
 alias hu='hugo server -w'
 alias pim='vim $(git ls-files | peco)'
+alias gbrda='git branch | xargs git branch -d'
 
 # typo
 alias sl='ls'
@@ -58,10 +59,10 @@ export RUBYOPT="-W0"
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-#export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
-#export JDK_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin/java'
-#export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-#PATH=${JAVA_HOME}/bin:${PATH}
+#export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "11"`
+export JDK_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin/java'
+export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
+PATH=${JAVA_HOME}/bin:${PATH}
 
 #export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
 
@@ -76,4 +77,7 @@ export PATH="/Applications/Sencha/Test/2_2_1_83/stc:$PATH"
 #export PATH=$PYENV_ROOT/bin:$PATH
 #eval "$(pyenv init -)"
 
-export SBT_OPTS='-Xmx2G -Xss2M'
+export SBT_OPTS='-Xmx2G -Xss4M'
+export PATH="/Applications/Sencha/Test/2_3_0_328/stc:$PATH"
+
+eval "$(jump shell)"
