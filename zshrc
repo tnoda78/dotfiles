@@ -10,7 +10,6 @@ HIST_STAMPS="yyyy-mm-dd"
 
 plugins=(git bundler history ruby)
 
-source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -59,25 +58,17 @@ export RUBYOPT="-W0"
 export PATH=$HOME/.cargo/bin:$PATH
 export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
 
-#export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "11"`
-export JDK_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/bin/java'
-export JAVA_HOME=`/usr/libexec/java_home -v "1.8"`
-PATH=${JAVA_HOME}/bin:${PATH}
-
-#export MECAB_DICDIR=/usr/local/lib/mecab/dic/mecab-ipadic-neologd
-
-# Python
-#export PYENV_ROOT="$HOME/.pyenv"
-#export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
-export PATH="/Applications/Sencha/Test/2_2_1_83/stc:$PATH"
-
-#export PYENV_ROOT=$HOME/.pyenv
-#export PATH=$PYENV_ROOT/bin:$PATH
-#eval "$(pyenv init -)"
+export JAVA_HOME=$HOME/.sdkman/candidates/java/current
+export PATH=$JAVA_HOME/bin:$PATH
 
 export SBT_OPTS='-Xmx2G -Xss4M'
 export PATH="/Applications/Sencha/Test/2_3_0_328/stc:$PATH"
 
 eval "$(jump shell)"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

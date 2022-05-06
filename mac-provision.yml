@@ -11,26 +11,20 @@
       - { name: cabal-install }
       - { name: dep }
       - { name: direnv }
-      - { name: elixir }
       - { name: ffmpeg }
-      - { name: fish }
       - { name: git, state: 'latest' }
+      - { name: gh }
       - { name: ghc }
       - { name: ghq }
       - { name: go }
-      - { name: graphviz }
-      - { name: hugo }
-      - { name: heroku }
       - { name: imagemagick }
+      - { name: jump }
       - { name: jq }
       - { name: jenv }
       - { name: libmagic }
       - { name: libiconv }
-      - { name: mecab }
-      - { name: mecab-ipadic }
       - { name: mysql }
       - { name: node }
-      - { name: pandoc }
       - { name: peco }
       - { name: postgresql }
       - { name: pyenv }
@@ -40,20 +34,25 @@
       - { name: sbt }
       - { name: terraform }
       - { name: tree }
-      - { name: yarn }
+      - { name: vim }
       - { name: zlib }
     homebrew_cask_packages:
-      - { name: android-studio }
-      - { name: docker }
-      - { name: firefox }
+      - { name: chatwork }
+      - { name: editaro }
+      - { name: dynalist }
       - { name: google-japanese-ime }
       - { name: insomnia }
+      - { name: intellij-idea }
       - { name: iterm2 }
+      - { name: karabiner-elements }
       - { name: licecap }
-      - { name: sequel-pro }
+      - { name: mat }
+      - { name: sequel-ace }
       - { name: slack }
       - { name: vagrant }
+      - { name: virtualbox }
       - { name: visual-studio-code }
+      - { name: zoom }
     npm_packages:
       - { name: markdown-pdf }
   tasks:
