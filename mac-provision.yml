@@ -8,31 +8,22 @@
     homebrew_packages:
       - { name: awscli }
       - { name: curl, state: 'latest' }
-      - { name: cabal-install }
-      - { name: dep }
       - { name: direnv }
-      - { name: ffmpeg }
       - { name: git, state: 'latest' }
       - { name: gh }
       - { name: ghc }
       - { name: ghq }
       - { name: go }
-      - { name: imagemagick }
-      - { name: jump }
       - { name: jq }
-      - { name: jenv }
-      - { name: libmagic }
       - { name: libiconv }
       - { name: mysql }
       - { name: node }
       - { name: peco }
       - { name: postgresql }
-      - { name: pyenv }
       - { name: rbenv, state: 'latest' }
       - { name: redis }
       - { name: ruby-build, state: 'latest' }
       - { name: sbt }
-      - { name: terraform }
       - { name: tree }
       - { name: vim }
       - { name: zlib }
@@ -55,6 +46,7 @@
       - { name: zoom }
     npm_packages:
       - { name: markdown-pdf }
+      - { name: n }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
