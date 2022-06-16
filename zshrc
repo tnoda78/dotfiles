@@ -72,3 +72,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 
 export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+export PATH="/Applications/Sencha/Test/2_4_0_186/stc:$PATH"
