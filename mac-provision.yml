@@ -13,40 +13,27 @@
       - { name: gh }
       - { name: ghc }
       - { name: ghq }
-      - { name: go }
       - { name: jq }
       - { name: libiconv }
       - { name: mysql }
       - { name: node }
       - { name: peco }
-      - { name: postgresql }
-      - { name: rbenv, state: 'latest' }
       - { name: redis }
-      - { name: ruby-build, state: 'latest' }
+      - { name: saml2aws }
       - { name: sbt }
       - { name: tree }
       - { name: vim }
       - { name: zlib }
     homebrew_cask_packages:
-      - { name: chatwork }
-      - { name: editaro }
       - { name: dynalist }
       - { name: google-japanese-ime }
-      - { name: insomnia }
       - { name: intellij-idea }
       - { name: iterm2 }
       - { name: karabiner-elements }
       - { name: licecap }
-      - { name: mat }
       - { name: sequel-ace }
       - { name: slack }
-      - { name: vagrant }
-      - { name: virtualbox }
       - { name: visual-studio-code }
-      - { name: zoom }
-    npm_packages:
-      - { name: markdown-pdf }
-      - { name: n }
   tasks:
     # homebrew
     - name: homebrewのtapリポジトリを追加
@@ -85,6 +72,3 @@
       shell: curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
       args:
         creates: ~/.oh-my-zsh/
-    - name: npmパッケージのインストール
-      npm: name={{ item.name }} global=yes
-      with_items: '{{ npm_packages }}'

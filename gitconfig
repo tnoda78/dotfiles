@@ -38,6 +38,7 @@
   rbo = rebase --onto
   rs = reset
   rsh = reset --hard
+  restorestg = restore --staged
   sh = show
   so = remote show origin
   st = status
@@ -59,3 +60,4 @@
   sslVerify = false
 [core]
   editor = vim
+  autocrlf = true
