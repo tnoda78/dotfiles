@@ -1,20 +1,25 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="afowler"
-HIST_STAMPS="yyyy-mm-dd"
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
-plugins=(git bundler history ruby)
+zinit snippet PZT::modules/helper/init.zsh
 
-source $ZSH/oh-my-zsh.sh
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit snippet OMZP::mercurial
+zinit snippet OMZP::history
+zinit cdclear -q
 
-# User configuration
-export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games":$PATH
-eval "$(rbenv init -)"
+zinit snippet OMZT::gentoo
 
 # Golang
 export GOPATH=$HOME
@@ -25,7 +30,6 @@ if [ "$(uname)" = 'Darwin' ]; then
 #    export GOROOT=/usr/lib/go
 fi
 export PATH=$PATH:$GOROOT/bin
-export PATH="/usr/local/heroku/bin:$PATH"
 
 # peco, ghq
 alias pcd='cd $(ghq list -p | peco)'
@@ -53,23 +57,3 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
-export RUBYOPT="-W0"
-
-export PATH=$HOME/.cargo/bin:$PATH
-export PATH=$HOME/Library/Android/sdk/platform-tools:$PATH
-
-export JAVA_HOME=$HOME/.sdkman/candidates/java/current
-export PATH=$JAVA_HOME/bin:$PATH
-
-export SBT_OPTS='-Xmx2G -Xss4M'
-export PATH="/Applications/Sencha/Test/2_3_0_328/stc:$PATH"
-
-eval "$(jump shell)"
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-export PATH="/Users/tomoyanoda/bin/Sencha/Cmd:$PATH"
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-export PATH="/Applications/Sencha/Test/2_4_0_186/stc:$PATH"
